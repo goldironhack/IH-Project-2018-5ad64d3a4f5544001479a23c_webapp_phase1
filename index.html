@@ -1,15 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-ES">
 <head>
-    <meta charset="UTF-8">
-    <title></title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <title>Primer Commit</title>
+  <link rel="stylesheet" href="style.css">
+  <title></title>
 </head>
-<body>
-    <div class="container">
-        <h1>Hello World!</h1>
-        <button id="btn">Click me</button>
+  <body>
+    <div id="contenedor">
+      <div id="cabecera">
+        <center>
+          <br>
+          <br>
+          <br>
+          <h1> Smart Choices NYU</h1>
+        </center>
+      </div>
+      <div id="menu">
+        <div class="tab">
+          <center>
+           <button class="tablinks" onclick="openCity(event, 'Filtros')" id="defaultOpen">Filtos</button>
+           <button class="tablinks" onclick="openCity(event, 'Otros')">Otros</button>
+          </center>
+        </div>
+        <br>
+        <!-- Tab content -->
+        <div id="Filtros" class="tabcontent">
+        <br>
+        <br>
+        <h3> Aqui van los filtros de seguridad, distancia y precio</h3>
+        </div>
+
+        <div id="Otros" class="tabcontent">
+          <br>
+          <br>
+         <h3>Otros</h3>
+         <p>Otros Filtros</p>
+        </div>
+
+      </div>
+      <div id="contenido">
+        <div class="row justify-content-center">
+          <div class="col-md-12">
+            <div id="map"></div>
+          </div>
+        </div>
+      </div>
+      <div id="lado">
+        <h2> Tabla de Resultados </h2>
+      </div>
     </div>
-    <script src="index.js"></script>
-</body>
+    <script src="main.js">
+      </script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBePmbVuBJxe-uCYZYOGoeROdGOVpAHam0&callback=initMap">
+    </script>
+      
+  </body>
 </html>
